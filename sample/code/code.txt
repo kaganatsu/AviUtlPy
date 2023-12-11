@@ -1,0 +1,11 @@
+def __section2key(key: str):
+    # セクションが[0]という形式の場合、intに変換する
+    number = re.match(r"^\d+$", key)
+    if number:
+        return int(number.group(0))
+    # セクションが[0.0]という形式の場合、一時的にtupleに変換する
+    point_number = re.match(r"^(\d+)\.(\d+)$", key)
+    if point_number:
+        return int(point_number.group(1)), int(point_number.group(2))
+    # 上記以外は文字列とする
+    return key
