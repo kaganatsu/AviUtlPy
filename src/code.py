@@ -1,7 +1,7 @@
 import copy
 import sys
 
-from src.Util import syntaxHighlight, exo
+from Util import syntaxHighlight, exo
 
 
 def main():

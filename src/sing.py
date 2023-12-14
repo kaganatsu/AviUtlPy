@@ -4,7 +4,7 @@ import sys
 
 import pandas as pd
 
-from src.Util import exo
+from Util import exo
 
 
 def input_lyrics(path: str) -> list:
